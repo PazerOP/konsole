@@ -36,7 +36,7 @@ namespace Konsole
         public HighSpeedWriter(short width, short height, Colors defaultColors = null, char clearScreenChar = ' ')
         {
             PlatformStuff.EnsureRunningWindows();
-            new PlatformStuff().LockResizing(width, height);
+            //new PlatformStuff().LockResizing(width, height);
             _consoleFileHandle = OpenConsole();
             _height = height;
             _width = width;
